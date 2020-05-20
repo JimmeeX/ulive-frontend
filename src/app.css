@@ -1,0 +1,45 @@
+main {
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas:
+    '.'
+    '.'
+    'logo'
+    'slogan'
+    'search'
+    '.'
+    '.'
+    '.';
+  justify-items: center;
+  align-items: center;
+}
+
+#bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(assets/culture_montage_blur.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+#home-logo {
+  grid-area: logo;
+  height: 300px;
+}
+
+#slogan {
+  grid-area: slogan;
+  color: white;
+}
+
+#home-search {
+  grid-area: search;
+}
