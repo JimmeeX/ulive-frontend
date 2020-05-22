@@ -42,4 +42,5 @@ main {
 
 #home-search {
   grid-area: search;
+  width: 750px;
 }

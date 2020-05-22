@@ -5,23 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>ULive</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../shared/shared.css" />
     <link rel="stylesheet" href="app.css" />
     <script src="app.js" defer></script>
   </head>
   <body>
     <header>
-      <img class="brand" src="assets/logo.png" />
+      <a class="brand" href="../index.html"
+        ><img class="brand-logo" src="../assets/logo.png"
+      /></a>
       <nav>
-        <ul>
-          <a href="search/index.html">Browse Colleges</a>
-          <a>Discussion</a>
-          <a>Login</a>
-          <a>Sign Up</a>
+        <ul class="nav-items">
+          <div id="nav-browse" class="nav-item">
+            <a href="search/index.html">Browse Colleges</a>
+          </div>
+          <li id="nav-discussion" class="nav-item">
+            <a href="discussion/index.html">Discussion</a>
+          </li>
+          <li id="nav-login" class="nav-item">
+            <a href="auth/login/index.html">Login</a>
+          </li>
+          <li id="nav-signup" class="nav-item">
+            <a href="auth/signup/index.html">Sign Up</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      Hello
+      <ulive-search
+        value="UNSW"
+        placeholder="Search college by name, suburb or university"
+      ></ulive-search>
     </main>
   </body>
 </html>

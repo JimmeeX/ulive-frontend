@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="shared/shared.css" />
     <link rel="stylesheet" href="app.css" />
+    <script src="components/search.js" defer></script>
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -35,13 +36,18 @@
     <main>
       <img id="home-logo" src="assets/logo.png" />
       <h1 id="slogan">Bringing Cultures Together</h1>
-      <div id="home-search" class="search-bar">
-        <input
+      <!-- <div id="home-search" class="search-bar"> -->
+      <!-- <input
           type="text"
           placeholder="Search college by name, suburb or university"
         />
-        <button>Search</button>
-      </div>
+        <button>Search</button> -->
+      <ulive-search
+        id="home-search"
+        value="UNSW"
+        placeholder="Search college by name, suburb or university"
+      ></ulive-search>
+      <!-- </div> -->
     </main>
   </body>
 </html>
